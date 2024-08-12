@@ -1,5 +1,6 @@
-import 'package:dart_challenge2/dart_challenge2.dart' as dart_challenge2;
+import 'bank_account.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${dart_challenge2.calculate()}!');
+void main() {
+  BankAccount bankAccount = BankAccount.deposit(yourMoney: 1000);
+  bankAccount.yourWithdraw(yourWithdraw: 500);
 }
